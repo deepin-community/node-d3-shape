@@ -1,0 +1,76 @@
+node-d3-shape (1.3.7-3) unstable; urgency=medium
+
+  * Team upload
+  * Bump debhelper compatibility level to 13
+  * Modernize debian/watch
+  * Fix GitHub tags regex
+  * Use dh-sequence-nodejs
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix filenamemangle
+  * Fix test (Closes: #997586)
+  * Add lintian overrides
+
+ -- Yadd <yadd@debian.org>  Tue, 26 Oct 2021 10:03:41 +0200
+
+node-d3-shape (1.3.7-2) unstable; urgency=medium
+
+  * Bump Standards-Version to 4.5.1 (no changes needed)
+  * Use node-rollup-plugin-terser (now available in the archive)
+  * Enable nocheck build profile
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 16 Dec 2020 14:59:02 +0530
+
+node-d3-shape (1.3.7-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Use secure copyright file specification URI.
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.4.1, no changes needed.
+
+  [ Kannan V M ]
+  * New upstream version 1.3.7
+  * changed all /usr/lib to /usr/share in debian/install
+
+  [ Xavier Guimard ]
+  * Add debian/gbp.conf
+  * Fix patch description
+  * Fix copyright
+  * Fix auto install
+  * Fix auto install
+
+ -- Kannan V M <kannan.mail@disroot.org>  Mon, 16 Mar 2020 14:38:18 +0530
+
+node-d3-shape (1.3.5-2) unstable; urgency=medium
+
+  * Reupload to unstable
+  * Bump Standards-Version to 4.4.0 (no changes needed)
+
+ -- Pirate Praveen <praveen@debian.org>  Wed, 10 Jul 2019 17:11:03 +0530
+
+node-d3-shape (1.3.5-1) experimental; urgency=medium
+
+  * New upstream version 1.3.5
+  * Use salsa.debian.org in Vcs-* fields
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Bump debhelper compatibility level to 11
+  * Switch to rollup from webpack (rollup is in main now)
+  * Switch to pkg-js-tools for tests
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 22 Jun 2019 18:38:27 +0530
+
+node-d3-shape (1.2.0-2) unstable; urgency=medium
+
+  * Use webpack to build umd module like upstream
+
+ -- Pirate Praveen <praveen@debian.org>  Sat, 06 Jan 2018 22:28:52 +0530
+
+node-d3-shape (1.2.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #878287)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 12 Oct 2017 13:22:01 +0530

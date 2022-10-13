@@ -1,0 +1,35 @@
+Source: node-d3-shape
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Section: javascript
+Testsuite: autopkgtest-pkg-nodejs
+Priority: optional
+Build-Depends:
+ debhelper-compat (= 13)
+ , node-d3-path
+ , node-d3-polygon <!nocheck>
+ , node-tape <!nocheck>
+ , dh-sequence-nodejs
+ , rollup
+ , node-rollup-plugin-terser
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-d3-shape
+Vcs-Git: https://salsa.debian.org/js-team/node-d3-shape.git
+Homepage: https://d3js.org/d3-shape/
+Rules-Requires-Root: no
+
+Package: node-d3-shape
+Architecture: all
+Depends:
+ ${misc:Depends}
+ , node-d3-path
+ , nodejs
+Description: Graphical primitives for visualization, such as lines and areas
+ Visualizations typically consist of discrete graphical marks, such as symbols,
+ arcs, lines and areas. While the rectangles of a bar chart may be easy enough
+ to generate directly using SVG or Canvas, other shapes are complex, such as
+ rounded annular sectors and centripetal Catmull–Rom splines.
+ .
+ This module provides a variety of shape generators for your convenience.
+ .
+ Node.js is an event-based server-side JavaScript engine.

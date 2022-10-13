@@ -1,0 +1,28 @@
+Description: fix test (display changed)
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/997586
+Forwarded: no
+Last-Update: 2021-10-26
+
+--- a/test/arc-test.js
++++ b/test/arc-test.js
+@@ -56,7 +56,7 @@
+   var a = shape.arc(), round = function(x) { return Math.round(x * 1e6) / 1e6; };
+   test.deepEqual(a.centroid({innerRadius: 0, outerRadius: 100, startAngle: 0, endAngle: Math.PI}).map(round), [50, 0]);
+   test.deepEqual(a.centroid({innerRadius: 0, outerRadius: 100, startAngle: 0, endAngle: Math.PI / 2}).map(round), [35.355339, -35.355339]);
+-  test.deepEqual(a.centroid({innerRadius: 50, outerRadius: 100, startAngle: 0, endAngle: -Math.PI}).map(round), [-75, 0]);
++  test.deepEqual(a.centroid({innerRadius: 50, outerRadius: 100, startAngle: 0, endAngle: -Math.PI}).map(round), [-75, -0]);
+   test.deepEqual(a.centroid({innerRadius: 50, outerRadius: 100, startAngle: 0, endAngle: -Math.PI / 2}).map(round), [-53.033009, -53.033009]);
+   test.end();
+ });
+--- a/test/pie-test.js
++++ b/test/pie-test.js
+@@ -168,7 +168,7 @@
+   test.deepEqual(shape.pie().startAngle(0).endAngle(-Math.PI).padAngle(Infinity)([1, 2, 3]), [
+     {data: 1, value: 1, index: 2, startAngle: -2.0943951023931953, endAngle: -3.1415926535897930, padAngle: 1.0471975511965976},
+     {data: 2, value: 2, index: 1, startAngle: -1.0471975511965976, endAngle: -2.0943951023931953, padAngle: 1.0471975511965976},
+-    {data: 3, value: 3, index: 0, startAngle: -0.0000000000000000, endAngle: -1.0471975511965976, padAngle: 1.0471975511965976}
++    {data: 3, value: 3, index: 0, startAngle:  0.0000000000000000, endAngle: -1.0471975511965976, padAngle: 1.0471975511965976}
+   ]);
+   test.end();
+ });
