@@ -1,3 +1,5 @@
 # False positive
-very-long-line-length-in-source-file README.md line 901 is 914 characters long (>512)
-very-long-line-length-in-source-file package.json line 35 is 628 characters long (>512)
+very-long-line-length-in-source-file 914 > 512 [README.md:901]
+very-long-line-length-in-source-file 628 > 512 [package.json:35]
+# Generic types-* path
+add-component-copyright types-*
